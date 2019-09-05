@@ -1,5 +1,9 @@
 ookla:
-  build: .
+  image: eastera/ookla-server:0.0.2
+  container_name: ookla-eastera-server
+  environment:
+    - "TZ=Asia/Dushanbe"
   ports:
     - "8080:8080"
     - "5060:5060"
+  restart: unless-stopped
