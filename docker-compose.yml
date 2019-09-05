@@ -1,5 +1,5 @@
 ookla:
-  image: eastera/ookla-server:0.0.2
+  image: eastera/ookla-server
   container_name: ookla-eastera-server
   environment:
     - "TZ=Asia/Dushanbe"
